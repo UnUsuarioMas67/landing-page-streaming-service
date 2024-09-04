@@ -1,3 +1,6 @@
+@import url(assets/fonts/Anton/Anton-Regular.ttf);
+@import url(assets/fonts/Inter/Inter-VariableFont_opsz\wght.ttf);
+
 /* Variables */
 :root {
   --gradient-purple: #6800ff;
@@ -9,6 +12,11 @@
   --secondary-color: #884ed1;
   --bg-color: #fdfdfd;
   --bg-dark: #131313;
+
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 800;
 }
 
 /* Resets */
@@ -21,6 +29,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Inter, sans-serif;
 }
 
 body {
