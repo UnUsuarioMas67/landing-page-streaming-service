@@ -9,7 +9,7 @@
   --gradient-45deg: linear-gradient(45deg, var(--gradient-pink) 0%, var(--gradient-purple) 100%);
   --gradient-90deg: linear-gradient(90deg, var(--gradient-pink) 0%, var(--gradient-purple) 100%);
 
-  --secondary-color: #884ed1;
+  --primary-color: #9200ff;
   --bg-color: #fdfdfd;
   --bg-dark: #131313;
 
