@@ -41,3 +41,9 @@ svg {
   display: block;
   max-width: 100%;
 }
+
+/* Background */
+.hero-bg {
+  --bg-darkness: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 1) 100%);
+  background: var(--bg-darkness) center, url(assets/Peliculas-Ready-Player-One.jpg) center / 798px;
+}
