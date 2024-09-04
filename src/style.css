@@ -1,0 +1,37 @@
+/* Variables */
+:root {
+  --gradient-purple: #6800ff;
+  --gradient-pink: #ba00ff;
+  --gradient: linear-gradient(0deg, var(--gradient-pink) 0%, var(--gradient-purple) 100%);
+  --gradient-45deg: linear-gradient(45deg, var(--gradient-pink) 0%, var(--gradient-purple) 100%);
+  --gradient-90deg: linear-gradient(90deg, var(--gradient-pink) 0%, var(--gradient-purple) 100%);
+
+  --secondary-color: #884ed1;
+  --bg-color: #fdfdfd;
+  --bg-dark: #131313;
+}
+
+/* Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
