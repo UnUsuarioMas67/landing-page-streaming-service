@@ -218,3 +218,52 @@ h1 {
 .metric-desc {
   font-size: 0.8rem;
 }
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: var(--font-bold);
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: var(--font-semibold);
+}
+
+/* Watch Section */
+.img-slider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.slides-container {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: scroll;
+}
+
+.slides-container > img {
+  width: 128px;
+  border-radius: 15px;
+}
+
+.slide-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 72px;
+  flex-shrink: 0;
+
+  border: none;
+  background-color: #dbdada;
+  border-radius: 10px;
+}
+
+.slide-btn > svg {
+  width: 20px;
+  height: 20px;
+  color: #929292;
+}
