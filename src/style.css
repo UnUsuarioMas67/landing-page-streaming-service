@@ -123,13 +123,29 @@ nav > ul {
   color: white;
   text-decoration: none;
   background: var(--gradient);
+  font-size: 1rem;
   padding: 10px 24px;
+  border: none;
   border-radius: 10px;
+  width: fit-content;
+
+  transition: filter 0.2s;
+}
+
+.btn:hover {
+  filter: brightness(0.8);
 }
 
 .btn.alt {
   background: none;
   border: 2px solid white;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.btn.alt:hover {
+  filter: none;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* Thinner Navbar buttons */
