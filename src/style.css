@@ -229,6 +229,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: var(--font-semibold);
+  margin-bottom: 1.5rem;
 }
 
 /* Watch Section */
@@ -267,4 +268,31 @@ h3 {
   width: 20px;
   height: 20px;
   color: #929292;
+}
+
+/* Benefits Section */
+#benefits {
+  padding: 0;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 4rem;
+
+  background: var(--gradient-inverted);
+  color: white;
+  min-height: 640px;
+
+  padding: 5.5rem 1rem 0;
+}
+
+.benefit:nth-child(even) {
+  background: var(--bg-dark);
+}
+
+.benefit img {
+  width: min(80vw, 400px);
 }
