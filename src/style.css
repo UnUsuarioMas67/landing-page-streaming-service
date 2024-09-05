@@ -46,6 +46,12 @@ body {
   background-color: var(--bg-color);
 }
 
+.logo,
+.metric-value {
+  color: transparent;
+  background: var(--gradient) text;
+}
+
 /* Background */
 .hero-bg {
   --bg-darkness: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 1) 100%);
@@ -64,8 +70,6 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: transparent;
-  background: var(--gradient) text;
   font-family: 'Anton', 'Inter', sans-serif;
   font-size: 2rem;
 }
@@ -152,4 +156,64 @@ nav > ul {
 nav .btn {
   width: 100%;
   padding: 6px 24px;
+}
+
+section {
+  --ph: 16px;
+  padding-left: var(--ph);
+  padding-right: var(--ph);
+
+  text-align: center;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 4.5rem;
+
+  padding-top: 3rem;
+  height: 40rem;
+  color: white;
+}
+
+.hero-img {
+  display: none;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: var(--font-extra-bold);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Metrics */
+.metrics-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  max-width: 10rem;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: var(--font-semibold);
+}
+
+.metric-desc {
+  font-size: 0.8rem;
 }
