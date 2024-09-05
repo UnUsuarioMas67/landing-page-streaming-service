@@ -2,7 +2,7 @@
 :root {
   --gradient-purple: #6800ff;
   --gradient-pink: #ba00ff;
-  --gradient: linear-gradient(0deg, var(--gradient-pink) 0%, var(--gradient-purple) 100%);
+  --gradient: linear-gradient(180deg, var(--gradient-pink) 0%, var(--gradient-purple) 100%);
   --gradient-45deg: linear-gradient(45deg, var(--gradient-pink) 0%, var(--gradient-purple) 100%);
   --gradient-90deg: linear-gradient(90deg, var(--gradient-pink) 0%, var(--gradient-purple) 100%);
 
@@ -46,4 +46,90 @@ svg {
 .hero-bg {
   --bg-darkness: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 1) 100%);
   background: var(--bg-darkness) center, url(assets/Peliculas-Ready-Player-One.jpg) center / 798px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: transparent;
+  background: var(--gradient) text;
+  font-family: 'Anton', 'Inter', sans-serif;
+  font-size: 2rem;
+}
+
+.logo > svg {
+  color: var(--primary-color);
+  width: 32px;
+  height: 32px;
+}
+
+#burger-btn,
+#close-btn {
+  border: none;
+  background: transparent;
+  color: white;
+
+  > svg {
+    --size: 32px;
+    width: var(--size);
+    height: var(--size);
+  }
+}
+
+/* Navigation Bar */
+nav {
+  position: absolute;
+  left: 0;
+  top: -100%; /* Hide Navbar */
+  width: 100%;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  background-color: var(--bg-dark);
+}
+
+#close-btn {
+  align-self: end;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 32px;
+  padding: 0 10%;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background: var(--gradient);
+  padding: 10px 24px;
+  border-radius: 10px;
+}
+
+.btn.alt {
+  background: none;
+  border: 2px solid white;
+}
+
+/* Thinner Navbar buttons */
+nav .btn {
+  width: 100%;
+  padding: 6px 24px;
 }
