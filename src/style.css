@@ -42,6 +42,10 @@ svg {
   max-width: 100%;
 }
 
+body {
+  background-color: var(--bg-color);
+}
+
 /* Background */
 .hero-bg {
   --bg-darkness: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 1) 100%);
