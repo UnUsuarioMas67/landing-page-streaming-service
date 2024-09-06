@@ -7,6 +7,8 @@
   --gradient-45deg: linear-gradient(45deg, var(--gradient-purple) 0%, var(--gradient-pink) 100%);
   --gradient-90deg: linear-gradient(90deg, var(--gradient-purple) 0%, var(--gradient-pink) 100%);
 
+  --gradient-gold: linear-gradient(45deg, rgba(255, 199, 1, 1) 0%, rgba(255, 237, 0, 1) 100%);
+
   --primary-color: #9200ff;
   --bg-color: #fdfdfd;
   --bg-dark: #131313;
@@ -296,4 +298,67 @@ h3 {
 
 .benefit img {
   width: min(80vw, 400px);
+}
+
+/* Pricing Section */
+table {
+  margin: auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+tr:not(:first-child :last-child) {
+  border-bottom: thin solid rgba(146, 146, 146, 0.3);
+}
+
+td,
+th {
+  padding: 1rem 0.5rem;
+}
+
+td {
+  width: 8.5rem;
+  font-size: 0.875rem;
+}
+
+th[scope='row'] {
+  text-align: left;
+  max-width: 25rem;
+  padding-left: 1.5rem;
+}
+
+.table-desktop th[scope='col']:nth-child(even),
+.table-desktop td:nth-child(even) {
+  background-color: rgba(146, 146, 146, 0.15);
+}
+
+.table-desktop th[scope='col'] {
+  border-radius: 15px 15px 0 0;
+}
+
+.table-desktop tr:last-child > td {
+  border-radius: 0 0 15px 15px;
+}
+
+.square {
+  --size: 7rem;
+  width: var(--size);
+  height: var(--size);
+  line-height: var(--size);
+
+  color: white;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.square.basic {
+  background: var(--bg-dark);
+}
+
+.square.standard {
+  background: var(--gradient-45deg);
+}
+
+.square.premium {
+  background: var(--gradient-gold);
 }
