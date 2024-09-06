@@ -319,12 +319,14 @@ th {
 td {
   width: 8.5rem;
   font-size: 0.875rem;
+  font-weight: var(--font-semibold);
 }
 
 th[scope='row'] {
   text-align: left;
   max-width: 25rem;
   padding-left: 1.5rem;
+  font-weight: var(--font-regular);
 }
 
 .table-desktop th[scope='col']:nth-child(even),
