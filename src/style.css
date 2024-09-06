@@ -411,3 +411,22 @@ th[scope='row'] {
 #premium.plan-btn.selected {
   background: var(--gradient-gold);
 }
+
+/* CTA */
+#cta h3 {
+  font-size: 1.25rem;
+}
+
+#cta form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 10px 16px;
+  width: 90%;
+  border: 1px solid var(--bg-dark);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
