@@ -13,6 +13,8 @@
   --bg-color: #fdfdfd;
   --bg-dark: #131313;
 
+  --footer-link-color: #2871b6;
+
   --font-regular: 400;
   --font-semibold: 600;
   --font-bold: 700;
@@ -429,4 +431,40 @@ input {
   border: 1px solid var(--bg-dark);
   border-radius: 10px;
   margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  text-align: center;
+
+  background: var(--bg-dark);
+  padding: 2rem 0 1.6rem;
+}
+
+.logo.small {
+  font-size: 1.5rem;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.links-container > a {
+  color: var(--footer-link-color);
+  transition: filter 0.1s;
+}
+
+.links-container > a:hover {
+  filter: brightness(1.2);
+}
+
+.copyright {
+  color: #666666;
 }
