@@ -364,3 +364,50 @@ th[scope='row'] {
 .square.premium {
   background: var(--gradient-gold);
 }
+
+.table-desktop {
+  display: none;
+}
+
+/* Mobile table */
+.table-mobile {
+  font-size: 0.875rem;
+  margin-bottom: 3rem;
+}
+
+.table-mobile th[scope='colgroup'] > div {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.plan-btn {
+  --size: 6.25rem;
+  width: var(--size);
+  height: var(--size);
+  line-height: var(--size);
+
+  background: none;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  font-size: 0.875;
+  font-weight: var(--font-bold);
+}
+
+.plan-btn.selected {
+  border: none;
+  color: white;
+}
+
+#basic.plan-btn.selected {
+  background-color: var(--bg-dark);
+}
+
+#standard.plan-btn.selected {
+  background: var(--gradient-45deg);
+}
+
+#premium.plan-btn.selected {
+  background: var(--gradient-gold);
+}
