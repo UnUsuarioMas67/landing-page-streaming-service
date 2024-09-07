@@ -523,4 +523,32 @@ footer {
   header {
     padding: 2rem var(--section-padding);
   }
+
+  #hero {
+    max-width: 1200px;
+  }
+
+  .hero-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .hero-img {
+    display: block;
+  }
+
+  .hero-text,
+  .hero-img {
+    max-width: 500px;
+  }
 }
