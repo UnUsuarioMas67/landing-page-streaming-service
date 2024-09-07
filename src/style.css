@@ -488,7 +488,7 @@ footer {
 
   /* Header */
   header {
-    padding: 2rem var(--section-padding);
+    padding: 1.5rem var(--section-padding);
   }
 
   #burger-btn,
@@ -508,5 +508,19 @@ footer {
     gap: 1rem;
     margin: 0;
     padding: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --section-padding: 4rem;
+  }
+
+  header {
+    padding: 2rem var(--section-padding);
   }
 }
