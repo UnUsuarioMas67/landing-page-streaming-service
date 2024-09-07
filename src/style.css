@@ -218,7 +218,7 @@ h1 {
 .metric {
   display: flex;
   flex-direction: column;
-  max-width: 10rem;
+  max-width: 10em;
 }
 
 .metric-value {
@@ -531,6 +531,8 @@ footer {
 
   #hero {
     max-width: 1200px;
+    gap: 7rem;
+    padding-top: 4rem;
   }
 
   .hero-top {
@@ -553,5 +555,19 @@ footer {
   .hero-img {
     display: block;
     max-width: 450px;
+  }
+
+  .metrics-container {
+    max-width: 25em;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .metric-value {
+    font-size: 2.25rem;
+  }
+
+  .metric-desc {
+    font-size: 1rem;
   }
 }
