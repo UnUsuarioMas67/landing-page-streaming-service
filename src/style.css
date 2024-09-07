@@ -131,10 +131,10 @@ nav > ul {
   display: inline-block;
   color: white;
   text-decoration: none;
-  background: var(--gradient);
+  background: var(--gradient) border-box;
   font-size: 1rem;
   padding: 10px 24px;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 10px;
   width: fit-content;
 
@@ -147,7 +147,7 @@ nav > ul {
 
 .btn.alt {
   background: none;
-  border: 2px solid white;
+  border-color: white;
   transition: border-color 0.2s, color 0.2s;
 }
 
