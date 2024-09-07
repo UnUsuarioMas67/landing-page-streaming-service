@@ -512,6 +512,15 @@ footer {
   h1 {
     font-size: 2.5rem;
   }
+
+  .img-slider,
+  .slides-container {
+    gap: 1rem;
+  }
+
+  .slides-container > img {
+    width: 180px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -584,5 +593,22 @@ footer {
 
   .metric-desc {
     font-size: 1rem;
+  }
+
+  #watch {
+    margin-bottom: 8rem;
+  }
+
+  .img-slider,
+  .slides-container {
+    gap: 1.5rem;
+  }
+
+  .slides-container > img {
+    width: 256px;
+  }
+
+  .slide-btn {
+    height: 144px;
   }
 }
