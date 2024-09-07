@@ -173,7 +173,7 @@ section {
   padding-right: var(--ph);
 
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 0 auto 4rem;
 }
 
 /* Hero Section */
