@@ -3,11 +3,8 @@
   --gradient-purple: #6800ff;
   --gradient-pink: #ba00ff;
   --gradient: linear-gradient(0deg, var(--gradient-purple) 0%, var(--gradient-pink) 100%);
-  --gradient-inverted: linear-gradient(180deg, var(--gradient-purple) 0%, var(--gradient-pink) 100%);
-  --gradient-45deg: linear-gradient(45deg, var(--gradient-purple) 0%, var(--gradient-pink) 100%);
-  --gradient-90deg: linear-gradient(90deg, var(--gradient-purple) 0%, var(--gradient-pink) 100%);
-
-  --gradient-gold: linear-gradient(45deg, rgba(255, 199, 1, 1) 0%, rgba(255, 237, 0, 1) 100%);
+  --gradient-45deg: linear-gradient(-45deg, var(--gradient-purple) 0%, var(--gradient-pink) 100%);
+  --gradient-gold: linear-gradient(-45deg, rgba(255, 199, 1, 1) 0%, rgba(255, 237, 0, 1) 100%);
 
   --primary-color: #9200ff;
   --bg-color: #fdfdfd;
@@ -137,7 +134,7 @@ nav > ul {
   display: inline-block;
   color: white;
   text-decoration: none;
-  background: var(--gradient) border-box;
+  background: var(--gradient-45deg) border-box;
   font-size: 1rem;
   padding: 10px 24px;
   border: 2px solid transparent;
@@ -293,7 +290,7 @@ h3 {
   align-items: center;
   gap: 4rem;
 
-  background: var(--gradient-inverted);
+  background: var(--gradient-45deg);
   color: white;
   min-height: 640px;
 
