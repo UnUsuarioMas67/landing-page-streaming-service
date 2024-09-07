@@ -524,6 +524,10 @@ footer {
     padding: 2rem var(--section-padding);
   }
 
+  p {
+    font-size: 1.125rem;
+  }
+
   #hero {
     max-width: 1200px;
   }
