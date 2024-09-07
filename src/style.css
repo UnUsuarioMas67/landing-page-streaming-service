@@ -542,6 +542,7 @@ footer {
 
   .hero-text {
     text-align: left;
+    max-width: 500px;
   }
 
   h1 {
@@ -550,10 +551,6 @@ footer {
 
   .hero-img {
     display: block;
-  }
-
-  .hero-text,
-  .hero-img {
-    max-width: 500px;
+    max-width: 450px;
   }
 }
