@@ -285,16 +285,20 @@ h3 {
 }
 
 .benefit {
+  background: var(--gradient-45deg);
+  color: white;
+}
+
+.benefit-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 4rem;
 
-  background: var(--gradient-45deg);
-  color: white;
   min-height: 640px;
-
+  max-width: 1440px;
+  margin: auto;
   padding: 5.5rem var(--section-padding);
 }
 
@@ -610,5 +614,26 @@ footer {
 
   .slide-btn {
     height: 144px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .benefit-inner {
+    padding: 5.5rem calc(var(--section-padding) * 2);
+  }
+
+  .benefit-inner {
+    flex-direction: row;
+    text-align: left;
+    gap: 5rem;
+  }
+
+  .benefit:nth-child(even) > .benefit-inner {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .benefit img {
+    width: 100%;
   }
 }
