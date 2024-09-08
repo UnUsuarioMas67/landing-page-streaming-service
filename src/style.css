@@ -528,6 +528,11 @@ footer {
   .slides-container > img {
     width: 180px;
   }
+
+  .links-container {
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 1000px) {
