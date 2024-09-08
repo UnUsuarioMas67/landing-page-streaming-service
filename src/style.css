@@ -452,6 +452,10 @@ input {
   border-radius: 10px;
 }
 
+input:focus {
+  outline: 2px solid var(--gradient-pink);
+}
+
 /* Footer */
 footer {
   display: flex;
