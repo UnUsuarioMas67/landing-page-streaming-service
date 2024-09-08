@@ -106,15 +106,23 @@ header {
 nav {
   position: absolute;
   left: 0;
-  top: -100%; /* Hide Navbar */
+  top: -30%; /* Hide Navbar */
   width: 100%;
-  padding: 16px;
+  z-index: 10;
+
+  padding: 1rem 1rem 2rem;
 
   display: flex;
   flex-direction: column;
   text-align: center;
 
   background-color: var(--bg-dark);
+
+  transition: top 0.3s ease-in-out;
+}
+
+nav.active {
+  top: 0;
 }
 
 #close-btn {
