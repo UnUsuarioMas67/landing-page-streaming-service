@@ -615,6 +615,15 @@ footer {
   .slide-btn {
     height: 144px;
   }
+
+  .table-mobile {
+    display: none;
+  }
+
+  .table-desktop {
+    display: table;
+    margin-bottom: 4rem;
+  }
 }
 
 @media (min-width: 1200px) {
