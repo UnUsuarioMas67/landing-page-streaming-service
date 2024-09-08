@@ -165,8 +165,8 @@ nav > ul {
 
 .btn.alt:hover {
   filter: none;
-  border-color: var(--primary-color);
-  color: var(--primary-color);
+  border-color: var(--gradient-pink);
+  color: var(--gradient-pink);
 }
 
 /* Thinner Navbar buttons */
