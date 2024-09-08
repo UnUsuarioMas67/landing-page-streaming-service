@@ -429,16 +429,19 @@ th[scope='row'] {
 
 #cta form {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 input {
   padding: 10px 16px;
-  width: 90%;
+  width: 100%;
+  max-width: 20rem;
+  font-size: 1rem;
   border: 1px solid var(--bg-dark);
   border-radius: 10px;
-  margin-bottom: 1rem;
 }
 
 /* Footer */
@@ -623,6 +626,10 @@ footer {
   .table-desktop {
     display: table;
     margin-bottom: 4rem;
+  }
+
+  #cta h3 {
+    font-size: 1.5rem;
   }
 }
 
