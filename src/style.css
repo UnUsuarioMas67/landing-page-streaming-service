@@ -251,6 +251,8 @@ h3 {
 
 /* Watch Section */
 .img-slider .slider-wrapper {
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,7 +274,8 @@ h3 {
 
 .slide-btn {
   --size: 32px;
-  --offset: calc(var(--size) / 4);
+  --offset: calc((var(--size) / 1.75) * -1);
+  position: absolute;
 
   display: flex;
   justify-content: center;
@@ -291,11 +294,11 @@ h3 {
 }
 
 .slide-btn.prev {
-  transform: translateX(var(--offset));
+  left: var(--offset);
 }
 
 .slide-btn.next {
-  transform: translateX(calc(var(--offset) * -1));
+  right: var(--offset);
 }
 
 .slide-btn > svg {
