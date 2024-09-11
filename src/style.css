@@ -250,17 +250,19 @@ h3 {
 }
 
 /* Watch Section */
-.img-slider {
+.img-slider .slider-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 0.5rem; */
+
+  margin-bottom: 2rem;
 }
 
 .slides-container {
   display: flex;
   gap: 0.5rem;
   overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .slides-container > img {
@@ -304,6 +306,50 @@ h3 {
 
 .slide-btn:hover {
   background: var(--gradient-pink);
+}
+
+.slider-scrollbar {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.slider-scrollbar .scrollbar-track:hover {
+  height: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: var(--bg-dark);
+  border-radius: inherit;
+  cursor: grab;
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
+  cursor: grabbing;
+  height: 8px;
+  top: -2px;
+}
+
+/* Bigger grab area */
+.slider-scrollbar .scrollbar-thumb::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -10px;
+  bottom: -10px;
 }
 
 /* Benefits Section */
