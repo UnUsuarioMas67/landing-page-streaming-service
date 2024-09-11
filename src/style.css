@@ -50,6 +50,7 @@ svg {
 
 body {
   background-color: var(--bg-color);
+  color: #131313;
 }
 
 .logo,
