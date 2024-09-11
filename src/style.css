@@ -250,6 +250,10 @@ h3 {
 }
 
 /* Watch Section */
+.img-slider {
+  padding: 0 1rem 0;
+}
+
 .img-slider .slider-wrapper {
   position: relative;
 
