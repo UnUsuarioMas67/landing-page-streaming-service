@@ -1,6 +1,6 @@
-# landing-page-servicio-streaming
+# landing-page-streaming-service
 
-Landing page de una plataforma de streaming hecho con HTML, CSS y JavaScript
+Landing page of a streaming platform made with HTML, CSS & JavaScript.
 
 ## TODO
 
