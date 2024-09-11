@@ -6,6 +6,34 @@ const scrollbarThumb = sliderScrollbar.querySelector('.scrollbar-thumb');
 window.addEventListener('load', initSlider);
 
 function initSlider() {
+  // Handle scrollbar thumb grab
+  scrollbarThumb.addEventListener('mousedown', (e) => {
+    const startX = e.clientX;
+    const thumbPosition = scrollbarThumb.offsetLeft;
+
+    // Update thumb position on mouse move
+    const handleMouseMove = (e) => {
+      const deltaX = e.clientX - startX;
+      const newThumbPosition = thumbPosition + deltaX;
+      const maxThumbPosition = sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth;
+
+      const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+      const scrollPosition = (boundedPosition / maxThumbPosition) * getSliderMaxScrollLeft();
+
+      scrollbarThumb.style.left = `${boundedPosition}px`;
+      slidesContainer.scrollLeft = scrollPosition;
+    };
+
+    // Remove event listeners when mouse is up
+    const handleMouseUp = () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('mouseup', handleMouseUp);
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', handleMouseUp);
+  });
+
   slideButtons.forEach((button) => {
     button.addEventListener('click', () => {
       const direction = button.classList.contains('prev') ? -1 : 1;
