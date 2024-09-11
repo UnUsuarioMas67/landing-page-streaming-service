@@ -293,8 +293,6 @@ h3 {
   background: var(--bg-dark);
   border-radius: 50%;
   cursor: pointer;
-
-  transition: background-color 0.2s;
 }
 
 .slide-btn.prev {
@@ -312,7 +310,7 @@ h3 {
 }
 
 .slide-btn:hover {
-  background: var(--gradient-pink);
+  background: var(--gradient);
 }
 
 .slider-scrollbar {
