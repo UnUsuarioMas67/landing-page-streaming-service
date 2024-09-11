@@ -3,7 +3,7 @@ const PLANS = [
     name: 'basic',
     data: {
       monthlyPrice: '4.99 US$',
-      quality: 'Buena',
+      quality: 'Good',
       resolution: '720p (HD)',
       surroundSound: false,
       isOnAllDevices: true,
@@ -15,7 +15,7 @@ const PLANS = [
     name: 'standard',
     data: {
       monthlyPrice: '7.99 US$',
-      quality: 'Muy Buena',
+      quality: 'Better',
       resolution: '1080p (Full HD)',
       surroundSound: false,
       isOnAllDevices: true,
@@ -27,7 +27,7 @@ const PLANS = [
     name: 'premium',
     data: {
       monthlyPrice: '10.99 US$',
-      quality: 'La Mejor',
+      quality: 'Best',
       resolution: '4K (Ultra HD)',
       surroundSound: true,
       isOnAllDevices: true,
