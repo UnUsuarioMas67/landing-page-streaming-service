@@ -15,15 +15,14 @@ function initSlider() {
   });
 
   const handleSliderButtons = function () {
-    const maxScrollLeft = slidesContainer.scrollWidth - slidesContainer.clientWidth;
     slideButtons[0].style.display = slidesContainer.scrollLeft <= 0 ? 'none' : 'flex';
-    slideButtons[1].style.display = slidesContainer.scrollLeft >= maxScrollLeft ? 'none' : 'flex';
+    slideButtons[1].style.display = slidesContainer.scrollLeft >= getSliderMaxScrollLeft() ? 'none' : 'flex';
   };
 
   const updateScrollThumbPosition = function () {
-    const maxScrollLeft = slidesContainer.scrollWidth - slidesContainer.clientWidth;
     const scrollPosition = slidesContainer.scrollLeft;
-    const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+    const thumbPosition =
+      (scrollPosition / getSliderMaxScrollLeft()) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
     scrollbarThumb.style.left = `${thumbPosition}px`;
   };
 
@@ -33,4 +32,8 @@ function initSlider() {
   });
 
   handleSliderButtons();
+}
+
+function getSliderMaxScrollLeft() {
+  return slidesContainer.scrollWidth - slidesContainer.clientWidth;
 }
