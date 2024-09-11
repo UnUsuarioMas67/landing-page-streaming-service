@@ -316,7 +316,7 @@ h3 {
 .slider-scrollbar {
   height: 24px;
   width: 100%;
-  display: flex;
+  display: none;
   align-items: center;
 }
 
@@ -613,6 +613,10 @@ footer {
 
   .slide-btn {
     --size: 40px;
+  }
+
+  .img-slider .slider-scrollbar {
+    display: flex;
   }
 
   .links-container {
