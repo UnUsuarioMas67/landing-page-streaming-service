@@ -1,7 +1,9 @@
 # landing-page-streaming-service
 
-Landing page of a streaming platform made with HTML, CSS & JavaScript.
+[Live Site](https://landing-page-streaming-service-brtkg1gjb.vercel.app/)
 
-## TODO
+![Preview image](preview.png)
 
-- Update this README
+## Description
+
+A responsive landing page for streaming platform made with HTML, CSS & JavaScript as a practice exercise.
